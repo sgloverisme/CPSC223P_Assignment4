@@ -63,7 +63,7 @@ def report_daily(data, date):
             t= data[key]['t']
             h= data[key]['h']
             r= data[key]['r']
-            ## display wrong
+           
             display = display + f'{m:22}{tm:8}{t:13}{h:10}{r:10.2f}' + "\n"  
     return display 
 
