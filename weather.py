@@ -63,7 +63,6 @@ def report_daily(data, date):
             t= data[key]['t']
             h= data[key]['h']
             r= data[key]['r']
-           
             display = display + f'{m:22}{tm:8}{t:13}{h:10}{r:10.2f}' + "\n"  
     return display 
 
@@ -86,6 +85,5 @@ def report_historical(data):
             min_hum= min_humidity(data,h)
             max_hum= max_humidity(data,h)
             rain = tot_rain(data,h)
-            ##display is wrong
             display = (display+ f"{m:20}{min_temp:13}{max_temp:13}{min_hum:10}{max_hum:10}{rain:10.2f}" + "\n" )
     return display 
